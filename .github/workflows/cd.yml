@@ -4,7 +4,7 @@ run-name: ${{ github.actor }} triggered deployment for ${{ github.repository }}
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
