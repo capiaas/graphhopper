@@ -16,8 +16,8 @@ services:
     depends_on:
       - downloader
     ports:
-      - "8989:8989"
-      - "8990:8990"
+      - "${HOST}:8989:8989"
+      - "${HOST}:8990:8990"
     volumes:
       - ./data:/data  # same as downloader
     environment:
